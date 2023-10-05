@@ -1,4 +1,4 @@
-package org.example;
+package main.java.org.example;
 
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
@@ -24,6 +24,7 @@ import java.security.GeneralSecurityException;
 import java.util.Collections;
 import java.util.List;
 
+
 /* class to demonstrate use of Calendar events list API */
 public class CalendarQuickstart {
     /**
@@ -46,6 +47,7 @@ public class CalendarQuickstart {
     private static final List<String> SCOPES =
             Collections.singletonList(CalendarScopes.CALENDAR_READONLY);
     private static final String CREDENTIALS_FILE_PATH = "/credentials.json";
+    ;
 
     /**
      * Creates an authorized Credential object.
@@ -74,6 +76,7 @@ public class CalendarQuickstart {
         Credential credential = new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
         //returns an authorized Credential object.
         return credential;
+
     }
 
     public static void main(String... args) throws IOException, GeneralSecurityException {

@@ -7,6 +7,13 @@ targetCompatibility = 11
 group = 'org.example'
 version = '1.0'
 
+run {
+    mainClass = 'main.java.org.example.CalendarQuickstart'
+    standardInput = System.in
+}
+
+
+
 repositories {
     mavenCentral()
 }
